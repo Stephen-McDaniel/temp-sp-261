@@ -1,0 +1,1 @@
+console.log('Apache 2 license applies to YakData SmartManager for ShinyProxy');

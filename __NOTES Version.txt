@@ -1,0 +1,21 @@
+202310
+
+1) Instance on AWS
+     sudo nano /etc/hosts
+          54.91.233.9 test261.yakdata.com
+2) ssh -i "/Volumes/6vrEW2Wt0y1R/Development/Keys/AWS/202110/AWS-202110-build-marketplace-pre-scan.pem" -p 22 ubuntu@test261.yakdata.com
+3) Delete from known hosts
+     sudo nano /Users/pta-stephen/.ssh/known_hosts
+4) Docker setup
+     https://github.com/Stephen-McDaniel/ubuntu-20-04-update-docker-compose#-install
+
+202205
+
+1) Moved all images from root to ./yakdata/docs
+2) Changed license to Apache License 2.0. 
+3) nginx bumped up to 1.21.6, on alpine bumped up to 3.15
+4) Upgraded shinyproxy from 2.5.0 to 2.6.1. 
+     IT IS CRITICAL you see release notes at https://shinyproxy.io/downloads/ if you are using redis with shinyproxy
+5) RStudio IDE (/rstudio/) can readily access all files in /yakdata/config/shinyproxy (previously could only access application.yml)
+6) The following navbar items now open in the same window: /rstudio/, /admin, /monitor/.
+
